@@ -3,60 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon_io/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Nosotros</title>
-
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="../img/logoemp.png" alt="Logo de empresa">
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <img src="../img/logoemp.png" alt="Imagen" class="navbar-img" style="height: 100px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Servicios.html">Servicios</a></li>
-                <li><a href="Novedades.html">Novedades</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <h1>Conocenos</h1>
+    </nav>
     </header>
     <main>
-        <section>
-            <h2>Sobre Nosotros</h2>
-            <p>Desde 2005, venimos ofreciendo servicios de destapaciones en la ciudad. 
-                Estamos comprometidos en proporcionar servicios de calidad y, para ello, contamos con la ética y responsabilidad de nuestro personal, y con la adquisición de novedosas tecnologías para brindar soluciones adecuadas a cada necesidad.</p>
-               
-                <img src="ruta/de/la/imagen.jpg" alt="img nosotros">
-
-            <p>Nuestro personal se encuentra capacitado para realizar trabajos con maquinas eléctricas de resortes rotativos con diámetros de 16" y 22" en destapaciones de cañerias cloacales, pluviales, cocinas, lavaderos, baños, desagotes de pozos de achique, sótanos, piletas de natación, diagnósticos por imagen;
-            y todo en lo que se repecta a desagues.</p>
-        </section>
-
-    </main>
-    <!-- Sección de equipos -->
-    <section id="equipos">
-        <h2 class="section-title">Equipos</h2>
-        <div class="gallery">
-            <!-- Imagen 1 -->
-            <img src="ruta/de/la/imagen1.jpg" alt="Descripción de la imagen 1">
-            <!-- Imagen 2 -->
-            <img src="ruta/de/la/imagen2.jpg" alt="Descripción de la imagen 2">
-            <!-- Imagen 3 -->
-            <img src="ruta/de/la/imagen3.jpg" alt="Descripción de la imagen 3">
-            <!-- Imagen 4 -->
-            <img src="ruta/de/la/imagen4.jpg" alt="Descripción de la imagen 4">
-            <!-- Imagen 5 -->
-            <img src="ruta/de/la/imagen5.jpg" alt="Descripción de la imagen 5">
-            <!-- Imagen 6 -->
-            <img src="ruta/de/la/imagen6.jpg" alt="Descripción de la imagen 6">
+        <!-- NOSOTROS BANNER-->
+        <div class="banner">
+            <img src="../img/bannerconocenos.jpg" alt="banner-nosotros">
+            <h2>Conocenos</h2>
         </div>
-    </section>
-    <footer>
-        <p>2024 | La Bs As Destapaciones</p>
-    </footer>
+
+        <section class="container py-5" >
+            <h2 class="text-center" style="padding: 40px 20px;">Nosotros</h2>
+            <p class="text-center">Desde 2005, venimos ofreciendo servicios de destapaciones en la ciudad. <br> 
+                Estamos comprometidos en proporcionar servicios de calidad y, para ello, contamos con <br> 
+                la ética y responsabilidad de nuestro personal, y con la adquisición de <br> 
+                novedosas tecnologías para brindar soluciones adecuadas a cada necesidad.</p>
+        </section>
+        <div class="container text-center py-5">
+            <img src="../img/equipo.png" alt="imagen-equipo" class="img-fluid my-3 img-custom">
+        </div>
+        <section class="container py-5">
+            <p class="text-center" style="padding: 40px 20px;">Nuestro personal se encuentra capacitado para realizar trabajos con maquinas <br>
+                eléctricas de resortes rotativos con diámetros de 16" y 22" en destapaciones de <br> 
+                cañerias cloacales, pluviales, cocinas, lavaderos, baños, desagotes de pozos de <br> 
+                achique, sótanos, piletas de natación, diagnósticos por imagen; <br> 
+                y todo en lo que se repecta a desagues.</p>
+        </section>
+        <div class="container text-center py-5">
+            <h2 class="text-center">Equipos</h2>
+        </div>
+        <section class="section-grey">
+            <div id="equiposCarousel" class="carousel slide carousel-custom" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/bomba sumergible.jpg" class="d-block" alt="Equipo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/camara-de-inspeccion-milwaukee.jpg" class="d-block" alt="Equipo 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cofahe_150_.jpg" class="d-block" alt="Equipo 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/detector.jpg" class="d-block" alt="Equipo 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/maletin_big.jpg" class="d-block" alt="Equipo 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/motobomba.jpg" class="d-block" alt="Equipo 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#equiposCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#equiposCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+    
+
+
+        <footer class="bg-light text-center py-3">
+            <p>2024 | La Bs As Destapaciones</p>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 </html>
