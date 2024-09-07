@@ -1,0 +1,54 @@
+/* Banners */
+.banner {
+    position: relative;
+    width: 100%;
+    height: $banner-height;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $banner-overlay-color;
+    z-index: 1;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+    color: $banner-title-color;
+    font-size: $banner-title-font-size;
+    margin: 0;
+    text-shadow: $banner-title-text-shadow;
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeIn 1s ease-in forwards;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.custom-block {
+    height: $custom-block-height;
+    background-color: $custom-block-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $custom-block-padding;
+    text-align: center;
+}

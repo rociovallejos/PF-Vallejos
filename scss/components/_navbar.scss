@@ -1,0 +1,20 @@
+/*NAVBAR BOOTSTRAP */
+
+.navbar-custom {
+    background-color: $color-primary; /* Color de fondo */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: $color-white; /* Color de los enlaces */
+    padding: 14px 20px;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    background-color: $color-secondary; /* Color de fondo al pasar el ratón */
+  }
+  
+  /* Cambiar color del icono hamburguesa de Bootstrap */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  

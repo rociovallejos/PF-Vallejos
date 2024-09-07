@@ -1,0 +1,108 @@
+/* MEDIAQUERIES */
+/* Navbar */
+@media (max-width: 767px) {
+    .navbar-custom {
+        $color-primary: #004e9b;
+    }
+
+    .navbar-img {
+        height: 80px; /* Ajusta el tamaño del logo en dispositivos móviles */
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0; /* Ajusta el margen de los elementos de navegación */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px; /* Ajusta el padding para mejor usabilidad en móviles */
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+}
+
+/* Banner */
+@media (max-width: 767px) {
+    .banner {
+        height: 60vh; /* Ajusta la altura del banner en móviles */
+    }
+
+    .banner h2 {
+        font-size: 36px; /* Ajusta el tamaño de la fuente del texto del banner */
+        left: 20px; /* Ajusta la posición horizontal del texto */
+    }
+}
+
+/* Sección Servicios */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Cambia la cantidad de columnas a 2 en móviles */
+    }
+
+    .servi-card {
+        padding: 10px; /* Reduce el padding de las tarjetas */
+    }
+
+    .servi-card h3 {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    .servi-card p {
+        font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
+    }
+}
+
+/* Sección Clientes */
+@media (max-width: 767px) {
+    .clientes-seccion {
+        padding: 30px 10px; /* Ajusta el padding de la sección */
+    }
+
+    .clientes-seccion h2 {
+        font-size: 2rem; /* Ajusta el tamaño de la fuente */
+        margin-bottom: 20px; /* Ajusta el margen inferior */
+    }
+
+    .clientes-grid {
+        grid-template-columns: repeat(1, 1fr); /* Cambia la cantidad de columnas a 1 en móviles */
+    }
+
+    .clientes-category {
+        padding: 10px; /* Reduce el padding de las tarjetas */
+    }
+
+    .clientes-category h3 {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    }
+
+    .clientes-category p {
+        font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
+    }
+}
+
+/* Sección Contacto */
+@media (max-width: 767px) {
+    .contact-section {
+        padding: 80px 20px; /* Ajusta el padding de la sección */
+    }
+
+    .contact-tittle h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+    }
+
+    .contact-tittle p {
+        font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+    }
+
+    .whatsapp-form input,
+    .whatsapp-form textarea {
+        font-size: 14px; /* Ajusta el tamaño de la fuente en el formulario */
+    }
+
+    .whatsapp-form button {
+        padding: 10px 20px; /* Ajusta el padding del botón */
+        font-size: 14px; /* Ajusta el tamaño de la fuente del botón */
+    }
+}

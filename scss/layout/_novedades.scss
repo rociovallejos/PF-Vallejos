@@ -1,0 +1,69 @@
+/* SECCION NOVEDADES */
+/* Sección Conoce Nuestro Canal */
+.canal-section {
+    background-color: $canal-bg-color;
+    padding: $canal-padding;
+    text-align: $canal-text-align;
+
+    .section-title {
+        font-size: $section-title-font-size;
+        color: $section-title-color;
+        margin-bottom: $section-title-margin-bottom;
+    }
+
+    .youtube-container {
+        background-color: $youtube-container-bg-color;
+        padding: $youtube-container-padding;
+        max-width: $youtube-container-max-width;
+        margin: 0 auto;
+        border-radius: $youtube-container-border-radius;
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Mantiene una proporción de 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: $video-wrapper-bg-color;
+            border-radius: $video-wrapper-border-radius;
+            margin-bottom: $video-wrapper-margin-bottom;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    .description-container {
+        font-size: $description-container-font-size;
+        color: $description-container-color;
+        max-width: $description-container-max-width;
+        margin: 0 auto;
+        text-align: $section-description-text-align;
+    
+        .section-description {
+            margin-top: $section-description-margin-top;  
+            text-align: $section-description-text-align;
+        }
+    }
+    
+}
+
+.info-block {
+    background-color: $info-block-bg-color;
+    color: $info-block-text-color;
+    text-align: $info-block-text-align;
+    padding: $info-block-padding;
+    font-size: $info-block-font-size;
+    
+    letter-spacing: $info-block-letter-spacing;
+
+    p {
+        margin: 0;
+    }
+}

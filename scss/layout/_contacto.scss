@@ -1,0 +1,51 @@
+/* SECCION CONTACTO - FORMULARIO */
+.contact-section {
+    background-color: $background-color;
+    padding: 150px;
+    text-align: center;
+    .contact-tittle {
+        justify-content: center;
+        .contact-tittle h1 {
+            margin-bottom: $margin-bottom;
+            font-size: $font-size-large;
+            color: $text-color-dark;
+        }
+        
+        .contact-tittle p {
+            margin-bottom: $margin-bottom;
+            font-size: $font-size-medium;
+            color: $text-color-dark;
+        }
+    }
+}
+
+
+.whatsapp-form {
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: $text-color-light;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: $padding-form;
+        margin-bottom: 15px;
+        font-size: $font-size-small;
+    }
+
+    button {
+        padding: $padding-form 30px;
+        background-color: $button-bg-color;
+        border: none;
+        border-radius: $border-radius;
+        color: white;
+        font-size: $font-size-button;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $button-bg-color-hover;
+        }
+    }
+}
