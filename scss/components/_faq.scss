@@ -10,51 +10,53 @@
     padding: $faq-padding;
     display: flex;
     justify-content: center;
-}
 
-.faq-container {
-    width: 100%;
-    max-width: $faq-container-max-width;
-    background-color: $faq-background-color;
-    border-radius: $faq-border-radius;
-    padding: $faq-padding-inner;
-}
+    .faq-container {
+        width: 100%;
+        max-width: $faq-container-max-width;
+        background-color: $faq-background-color;
+        border-radius: $faq-border-radius;
+        padding: $faq-padding-inner;
 
-.faq-item {
-    margin-bottom: $faq-margin-bottom-item;
-}
+        .faq-item {
+            margin-bottom: $faq-margin-bottom-item;
 
-.faq-question {
-    background-color: $faq-question-bg-color;
-    border: 1px solid $faq-border-color;
-    border-radius: $faq-border-radius;
-    padding: $faq-padding-item;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    text-align: left;
-}
+            .faq-question {
+                background-color: $faq-question-bg-color;
+                border: 1px solid $faq-border-color;
+                border-radius: $faq-border-radius;
+                padding: $faq-padding-item;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                text-align: left;
 
-.faq-answer {
-    display: none;
-    padding: $faq-padding-item;
-    background-color: $faq-answer-bg-color;
-    border: 1px solid $faq-border-color;
-    border-radius: $faq-border-radius;
-    margin-top: 5px;
-}
+                .arrow {
+                    font-size: $arrow-font-size;
+                    transition: transform 0.3s ease;
+                }
+            }
 
-.faq-item.open .faq-answer {
-    display: block;
-}
+            .faq-answer {
+                display: none;
+                padding: $faq-padding-item;
+                background-color: $faq-answer-bg-color;
+                border: 1px solid $faq-border-color;
+                border-radius: $faq-border-radius;
+                margin-top: 5px;
+            }
 
-.arrow {
-    font-size: $arrow-font-size;
-    transition: transform 0.3s ease;
-}
+            &.open {
+                .faq-answer {
+                    display: block;
+                }
 
-.faq-item.open .arrow {
-    transform: rotate(180deg);
+                .faq-question .arrow {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
 }
