@@ -1,17 +1,500 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 7 | @import 'components/contact';
- *   |         ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 7:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502  @import 'components/contact';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 7:9  root stylesheet";
+@charset "UTF-8";
+/*index */
+/*FOOTER */
+/*Seccion nosotros*/
+/*Seccion servicios*/
+/* Variables de Animación */
+/* Factor de escala para el efecto hover */
+/* Duración y tipo de transición para el efecto hover */
+/* Sombra para el efecto hover */
+/* SECCION SERVICIOS */
+/* SECCION NOVEDADES */
+/* SECCION NOSOTROS */
+/* SECCION CONTACTO */
+/* BANNER */
+/* SECCION PREGUNTAS FRECUENTES / FAQ */
+/* FOOTER */
+/* NAVBAR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+/*NAVBAR BOOTSTRAP */
+.navbar-custom {
+  background-color: #004e9b;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: #fff;
+  padding: 14px 20px;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+  background-color: #0f5eae;
+}
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Banners */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 61, 142, 0.526);
+  z-index: 1;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  opacity: 0; /* Inicialmente invisible */
+  animation: fadeIn 1s ease-in forwards;
+  z-index: 2;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.faq-title {
+  margin-bottom: 50px;
+  font-size: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.faq-section {
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+}
+.faq-section .faq-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+.faq-section .faq-container .faq-item {
+  margin-bottom: 10px;
+}
+.faq-section .faq-container .faq-item .faq-question {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.faq-section .faq-container .faq-item .faq-question .arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+.faq-section .faq-container .faq-item .faq-answer {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  margin-top: 5px;
+}
+.faq-section .faq-container .faq-item.open .faq-answer {
+  display: block;
+}
+.faq-section .faq-container .faq-item.open .faq-question .arrow {
+  transform: rotate(180deg);
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #6c757d;
+  border-top: #e9ecef;
+}
+
+.custom-block {
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* SECCION NOSOTROS */
+.img-custom {
+  width: 700px;
+  object-fit: cover;
+  /* Usando el mixin para el tamaño de la imagen */
+}
+
+.section-grey {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto; /* Para centrar */
+  /* Usando el mixin para la sección */
+}
+.section-grey .img-custom {
+  width: 700px;
+  object-fit: cover;
+}
+
+.carousel-custom img {
+  width: 100%;
+  object-fit: auto;
+  /* Usando el mixin para el tamaño de la imagen del carrusel */
+}
+
+/* SECCION SERVICIOS */
+/* CARDS CON GRILLA */
+/* Sección de Servicios */
+/* Sección Servicios */
+.servi-section {
+  padding: 150px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.servi-section h2 {
+  margin-bottom: 80px;
+  font-size: 28px;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid-container .servi-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.grid-container .servi-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.grid-container .servi-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.grid-container .servi-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 95px;
+}
+
+.whatsapp-button {
+  background-color: #3578e5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.whatsapp-button:hover {
+  background-color: #2859a6;
+  color: #fff;
+}
+
+/* Sección de Clientes */
+.clientes-seccion {
+  padding: 150px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.clientes-seccion h2 {
+  margin-bottom: 80px;
+  font-size: 28px;
+  color: #333;
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clientes-grid .clientes-category {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.clientes-grid .clientes-category img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+.clientes-grid .clientes-category h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.clientes-grid .clientes-category p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* SECCION NOVEDADES */
+/* Sección Conoce Nuestro Canal */
+.canal-section {
+  padding: 130px;
+  background-color: #fff;
+  text-align: center;
+}
+.canal-section .section-title {
+  font-size: 35px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.canal-section .youtube-container {
+  background-color: #f2f2f2;
+  padding: 20px 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.canal-section .youtube-container .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Mantiene una proporción de 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #000;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.canal-section .youtube-container .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.canal-section .description-container {
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.canal-section .description-container .section-description {
+  margin-top: 75px;
+}
+
+.info-block {
+  background-color: #3578e5;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px 0;
+  letter-spacing: 1px;
+}
+.info-block p {
+  margin: 0;
+}
+
+/* SECCION CONTACTO - FORMULARIO */
+.contact-section {
+  background-color: #c1c7d0;
+  padding: 150px;
+  text-align: center;
+}
+.contact-section .contact-tittle {
+  justify-content: center;
+}
+.contact-section .contact-tittle h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+}
+.contact-section .contact-tittle p {
+  margin-bottom: 30px;
+  font-size: 1em;
+  color: #333;
+}
+
+.whatsapp-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+.whatsapp-form input,
+.whatsapp-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.whatsapp-form button {
+  background-color: #255fd3;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.whatsapp-form button:hover {
+  background-color: #02c328;
+}
+
+/* MEDIAQUERIES */
+/* Navbar */
+@media (max-width: 767px) {
+  .navbar-img {
+    height: 80px; /* Ajusta el tamaño del logo en dispositivos móviles */
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 0; /* Ajusta el margen de los elementos de navegación */
+  }
+  .navbar-nav .nav-link {
+    padding: 10px; /* Ajusta el padding para mejor usabilidad en móviles */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+  }
+}
+/* Banner */
+@media (max-width: 767px) {
+  .banner {
+    height: 60vh; /* Ajusta la altura del banner en móviles */
+  }
+  .banner h2 {
+    font-size: 36px; /* Ajusta el tamaño de la fuente del texto del banner */
+    left: 20px; /* Ajusta la posición horizontal del texto */
+  }
+}
+/* Sección Servicios */
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Cambia la cantidad de columnas a 2 en móviles */
+  }
+  .servi-card {
+    padding: 10px; /* Reduce el padding de las tarjetas */
+  }
+  .servi-card h3 {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+  }
+  .servi-card p {
+    font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
+  }
+}
+/* Sección Clientes */
+@media (max-width: 767px) {
+  .clientes-seccion {
+    padding: 30px 10px; /* Ajusta el padding de la sección */
+  }
+  .clientes-seccion h2 {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 20px; /* Ajusta el margen inferior */
+  }
+  .clientes-grid {
+    grid-template-columns: repeat(1, 1fr); /* Cambia la cantidad de columnas a 1 en móviles */
+  }
+  .clientes-category {
+    padding: 10px; /* Reduce el padding de las tarjetas */
+  }
+  .clientes-category h3 {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+  }
+  .clientes-category p {
+    font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
+  }
+}
+/* Sección Contacto */
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 80px 20px; /* Ajusta el padding de la sección */
+  }
+  .contact-tittle h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+  }
+  .contact-tittle p {
+    font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+  }
+  .whatsapp-form input,
+  .whatsapp-form textarea {
+    font-size: 14px; /* Ajusta el tamaño de la fuente en el formulario */
+  }
+  .whatsapp-form button {
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    font-size: 14px; /* Ajusta el tamaño de la fuente del botón */
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scale-up {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes shadow-expand {
+  from {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+.card-hover-effect, .grid-container .servi-card, .clientes-grid .clientes-category {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.card-hover-effect:hover, .grid-container .servi-card:hover, .clientes-grid .clientes-category:hover {
+  transform: scale(1.05); /* Aplica el efecto de escala en el hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aplica la sombra en el hover */
+}
+
+/*# sourceMappingURL=style.css.map */

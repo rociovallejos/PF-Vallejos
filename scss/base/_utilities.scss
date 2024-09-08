@@ -1,0 +1,206 @@
+/* SECCION SERVICIOS */
+@mixin card-style($bg-color, $border-color, $border-radius, $box-shadow, $padding, $text-align) {
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: $padding;
+    text-align: $text-align;
+}
+
+
+
+/* SECCION NOVEDADES */
+// Mixin para bordes redondeados
+@mixin rounded-borders($radius) {
+    border-radius: $radius;
+}
+
+// Mixin para margen automático y centrado
+@mixin center-block($max-width) {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+// Mixin para estilo de texto (tamaño de fuente, color, alineación)
+@mixin text-style($font-size, $color, $text-align) {
+    font-size: $font-size;
+    color: $color;
+    text-align: $text-align;
+}
+
+// Mixin para espaciado interno (padding)
+@mixin padding-spacing($padding) {
+    padding: $padding;
+}
+
+
+
+
+/* SECCION NOSOTROS */
+// Mixin para definir el tamaño de la imagen
+@mixin img-size($width, $fit: cover) {
+    width: $width;
+    object-fit: $fit;
+}
+
+// Mixin para una sección con fondo, padding y bordes redondeados
+@mixin section-style($bg-color, $padding, $border-radius, $max-width) {
+    background-color: $bg-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    max-width: $max-width;
+    margin: 0 auto; /* Para centrar */
+}
+
+
+
+
+/* SECCION CONTACTO */
+@mixin font-size($size) {
+    font-size: $size;
+}
+
+@mixin margin-bottom($margin) {
+    margin-bottom: $margin;
+}
+
+@mixin padding-form($padding) {
+    padding: $padding;
+}
+
+@mixin button-style($bg-color, $bg-color-hover, $padding, $border-radius) {
+    background-color: $bg-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg-color-hover;
+    }
+}
+
+
+
+/* BANNER */
+@mixin banner-style($height, $overlay-color) {
+    position: relative;
+    width: 100%;
+    height: $height;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $overlay-color;
+        z-index: 1;
+    }
+}
+
+@mixin banner-title($color, $font-size, $text-shadow) {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+    color: $color;
+    font-size: $font-size;
+    margin: 0;
+    text-shadow: $text-shadow;
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeIn 1s ease-in forwards;
+    z-index: 2;
+}
+
+@mixin custom-block-style($height, $bg-color, $padding) {
+    height: $height;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $padding;
+    text-align: center;
+}
+
+
+
+
+
+/* SECCION PREGUNTAS FRECUENTES / FAQ */
+// Mixin para diseño de preguntas frecuentes
+@mixin faq-item-style(
+  $bg-color,
+  $border-color,
+  $border-radius,
+  $padding,
+  $text-align
+) {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: $padding;
+  text-align: $text-align;
+}
+
+// Mixin para diseño de respuestas de preguntas frecuentes
+@mixin faq-answer-style(
+  $bg-color,
+  $border-color,
+  $border-radius,
+  $padding
+) {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: $padding;
+}
+
+
+/* FOOTER */
+// Mixin para el footer
+@mixin footer-style(
+  $bg-color,
+  $padding,
+  $text-align,
+  $font-size,
+  $text-color,
+  $border
+) {
+  background-color: $bg-color;
+  padding: $padding;
+  text-align: $text-align;
+  font-size: $font-size;
+  color: $text-color;
+  border-top: $border;
+}
+
+/* NAVBAR */
+// Mixin para el estilo del navbar
+@mixin navbar-style(
+  $bg-color,
+  $link-color,
+  $link-hover-bg-color,
+  $toggler-icon
+) {
+  .navbar-custom {
+    background-color: $bg-color;
+
+    .navbar-nav .nav-link {
+      color: $link-color;
+      padding: 14px 20px;
+
+      &:hover {
+        background-color: $link-hover-bg-color;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background-image: url($toggler-icon);
+    }
+  }
+}

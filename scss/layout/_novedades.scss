@@ -1,22 +1,20 @@
 /* SECCION NOVEDADES */
 /* Sección Conoce Nuestro Canal */
 .canal-section {
+    @include padding-spacing($canal-padding);
     background-color: $canal-bg-color;
-    padding: $canal-padding;
-    text-align: $canal-text-align;
+    @include text-style(null, null, $canal-text-align);
 
     .section-title {
-        font-size: $section-title-font-size;
-        color: $section-title-color;
+        @include text-style($section-title-font-size, $section-title-color, center);
         margin-bottom: $section-title-margin-bottom;
     }
 
     .youtube-container {
         background-color: $youtube-container-bg-color;
-        padding: $youtube-container-padding;
-        max-width: $youtube-container-max-width;
-        margin: 0 auto;
-        border-radius: $youtube-container-border-radius;
+        @include padding-spacing($youtube-container-padding);
+        @include center-block($youtube-container-max-width);
+        @include rounded-borders($youtube-container-border-radius);
 
         .video-wrapper {
             position: relative;
@@ -25,7 +23,7 @@
             overflow: hidden;
             max-width: 100%;
             background-color: $video-wrapper-bg-color;
-            border-radius: $video-wrapper-border-radius;
+            @include rounded-borders($video-wrapper-border-radius);
             margin-bottom: $video-wrapper-margin-bottom;
 
             iframe {
@@ -38,29 +36,21 @@
         }
     }
 
-
     .description-container {
-        font-size: $description-container-font-size;
-        color: $description-container-color;
-        max-width: $description-container-max-width;
-        margin: 0 auto;
-        text-align: $section-description-text-align;
-    
+        @include text-style($description-container-font-size, $description-container-color, $section-description-text-align);
+        @include center-block($description-container-max-width);
+
         .section-description {
-            margin-top: $section-description-margin-top;  
-            text-align: $section-description-text-align;
+            margin-top: $section-description-margin-top;
         }
     }
-    
 }
 
 .info-block {
     background-color: $info-block-bg-color;
     color: $info-block-text-color;
-    text-align: $info-block-text-align;
-    padding: $info-block-padding;
-    font-size: $info-block-font-size;
-    
+    @include text-style($info-block-font-size, $info-block-text-color, $info-block-text-align);
+    @include padding-spacing($info-block-padding);
     letter-spacing: $info-block-letter-spacing;
 
     p {

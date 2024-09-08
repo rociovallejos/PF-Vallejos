@@ -1,10 +1,10 @@
 //base
 @import 'base/vars';
+@import 'base/utilities';
 @import 'base/reset';
 //components
 @import 'components/navbar';
 @import 'components/banner';
-@import 'components/contact';
 @import 'components/faq';
 @import 'components/footer';
 //layout
@@ -14,3 +14,4 @@
 @import 'layout/novedades';
 @import 'layout/contacto';
 @import 'layout/mediaqueries';
+@import 'layout/animaciones';

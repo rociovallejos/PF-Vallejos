@@ -1,113 +1,126 @@
-/*SECCION SERVICIOS */
-/*CARDS CON GRILLA */ 
 
+  /* SECCION SERVICIOS */
+  /* CARDS CON GRILLA */ 
+  /* Sección de Servicios */
+/* Sección Servicios */
 .servi-section {
-    padding: $servi-section-padding;
-    background-color: $servi-section-bg-color;
-    text-align: center;
+  padding: $servi-section-padding;
+  background-color: $servi-section-bg-color;
+  text-align: center;
 
-    h2 {
-        margin-bottom: $servi-section-h2-margin-bottom;
-        font-size: $servi-section-h2-font-size;
-        color: $servi-section-h2-color;
-    }
+  h2 {
+      margin-bottom: $servi-section-h2-margin-bottom;
+      font-size: $servi-section-h2-font-size;
+      color: $servi-section-h2-color;
+  }
 }
 
 .grid-container {
-    display: grid;
-    gap: $grid-gap;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto; 
-    max-width: $grid-max-width;
-    margin: $grid-margin;
+  display: grid;
+  gap: $grid-gap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  max-width: $grid-max-width;
+  margin: $grid-margin;
 
-    .servi-card {
-        background-color: $servi-card-bg-color;
-        border: 1px solid $servi-card-border-color;
-        border-radius: $servi-card-border-radius;
-        padding: $servi-card-padding;
-        box-shadow: $servi-card-box-shadow;
-        text-align: $servi-card-text-align;
+  .servi-card {
+      @include card-style(
+          $servi-card-bg-color,
+          $servi-card-border-color,
+          $servi-card-border-radius,
+          $servi-card-box-shadow,
+          $servi-card-padding,
+          $servi-card-text-align
+      );
 
-        img {
-            max-width: $servi-card-img-max-width;
-            height: $servi-card-img-height;
-            margin-bottom: $servi-card-img-margin-bottom;
-        }
+      // Aplica la clase de animación
+      @extend .card-hover-effect;
 
-        h3 {
-            font-size: $servi-card-h3-font-size;
-            margin-bottom: $servi-card-h3-margin-bottom;
-        }
+      img {
+          max-width: $servi-card-img-max-width;
+          height: $servi-card-img-height;
+          margin-bottom: $servi-card-img-margin-bottom;
+      }
 
-        p {
-            font-size: $servi-card-p-font-size;
-            line-height: $servi-card-p-line-height;
-        }
-    }
+      h3 {
+          font-size: $servi-card-h3-font-size;
+          margin-bottom: $servi-card-h3-margin-bottom;
+      }
+
+      p {
+          font-size: $servi-card-p-font-size;
+          line-height: $servi-card-p-line-height;
+      }
+  }
 }
 
 .button-container {
-    display: flex;
-    justify-content: $button-container-alignment;
-    margin-top: $button-container-margin-top;
+  display: flex;
+  justify-content: $button-container-alignment;
+  margin-top: $button-container-margin-top;
 }
 
 .whatsapp-button {
-    background-color: $whatsapp-button-bg-color;
-    color: $whatsapp-button-color;
-    padding: $whatsapp-button-padding;
-    border-radius: $whatsapp-button-border-radius;
-    font-weight: $whatsapp-button-font-weight;
-    text-decoration: none;
+  background-color: $whatsapp-button-bg-color;
+  color: $whatsapp-button-color;
+  padding: $whatsapp-button-padding;
+  border-radius: $whatsapp-button-border-radius;
+  font-weight: $whatsapp-button-font-weight;
+  text-decoration: none;
 
-    &:hover {
-        background-color: $whatsapp-button-hover-bg-color;
-        color: $whatsapp-button-color;
-    }
+  &:hover {
+      background-color: $whatsapp-button-hover-bg-color;
+      color: $whatsapp-button-color;
+  }
 }
 
+/* Sección de Clientes */
 .clientes-seccion {
-    padding: $clientes-seccion-padding;
-    background-color: $clientes-seccion-bg-color;
-    text-align: center;
+  padding: $clientes-seccion-padding;
+  background-color: $clientes-seccion-bg-color;
+  text-align: center;
 
-    h2 {
-        margin-bottom: $clientes-seccion-h2-margin-bottom;
-        font-size: $clientes-seccion-h2-font-size;
-        color: $clientes-seccion-h2-color;
-    }
+  h2 {
+      margin-bottom: $clientes-seccion-h2-margin-bottom;
+      font-size: $clientes-seccion-h2-font-size;
+      color: $clientes-seccion-h2-color;
+  }
 }
 
 .clientes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: $clientes-grid-gap;
-    max-width: $clientes-grid-max-width;
-    margin: $clientes-grid-margin;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $clientes-grid-gap;
+  max-width: $clientes-grid-max-width;
+  margin: $clientes-grid-margin;
 
-    .clientes-category {
-        background-color: $clientes-category-bg-color;
-        border: 1px solid $clientes-category-border-color;
-        border-radius: $clientes-category-border-radius;
-        padding: $clientes-category-padding;
-        box-shadow: $clientes-category-box-shadow;
-        text-align: center;
+  .clientes-category {
+      @include card-style(
+          $clientes-category-bg-color,
+          $clientes-category-border-color,
+          $clientes-category-border-radius,
+          $clientes-category-box-shadow,
+          $clientes-category-padding,
+          center
+      );
 
-        img {
-            max-width: $clientes-category-img-max-width;
-            margin-bottom: $clientes-category-img-margin-bottom;
-        }
+      // Aplica la clase de animación
+      @extend .card-hover-effect;
 
-        h3 {
-            font-size: $clientes-category-h3-font-size;
-            margin-bottom: $clientes-category-h3-margin-bottom;
-        }
+      img {
+          max-width: $clientes-category-img-max-width;
+          margin-bottom: $clientes-category-img-margin-bottom;
+      }
 
-        p {
-            font-size: $clientes-category-p-font-size;
-            line-height: $clientes-category-p-line-height;
-            color: $clientes-category-p-color;
-        }
-    }
+      h3 {
+          font-size: $clientes-category-h3-font-size;
+          margin-bottom: $clientes-category-h3-margin-bottom;
+      }
+
+      p {
+          font-size: $clientes-category-p-font-size;
+          line-height: $clientes-category-p-line-height;
+          color: $clientes-category-p-color;
+      }
+  }
 }

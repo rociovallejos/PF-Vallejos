@@ -9,9 +9,13 @@ $color-grey-dark: #ddd;
 $shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 $transition: 0.3s ease;
 
+/*index */
+$custom-block-bg-color: #ffffff; 
+$custom-block-padding: 20px; 
+$custom-block-margin-top: 80px; 
+$custom-block-margin-bottom: 80px; 
 
-
-/*footer */
+/*FOOTER */
 $footer-bg-color: #f8f9fa;
 $footer-padding: 20px;
 $footer-text-align: center;
@@ -169,3 +173,11 @@ $faq-padding-inner: 20px;
 $faq-margin-bottom-item: 10px;
 $faq-padding-item: 10px;
 $arrow-font-size: 1.2em;
+
+
+
+
+/* Variables de Animación */
+$card-hover-scale: 1.05; /* Factor de escala para el efecto hover */
+$card-hover-transition: 0.5s ease-in-out; /* Duración y tipo de transición para el efecto hover */
+$card-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para el efecto hover */
