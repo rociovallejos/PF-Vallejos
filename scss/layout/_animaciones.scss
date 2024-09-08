@@ -1,0 +1,42 @@
+/* ANIMACION FADE IN PARA BANNERS */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+// ANIMACION HOVER PARA CARDS
+@keyframes scale-up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale($card-hover-scale);
+    }
+}
+
+// Animación de sombra para cards
+@keyframes shadow-expand {
+    from {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    to {
+        box-shadow: $card-hover-shadow;
+    }
+}
+
+// Clase para el efecto hover en cards
+.card-hover-effect {
+    transition: transform $card-hover-transition, 
+                box-shadow $card-hover-transition;
+
+    &:hover {
+        transform: scale($card-hover-scale); 
+        box-shadow: $card-hover-shadow; 
+    }
+}
+

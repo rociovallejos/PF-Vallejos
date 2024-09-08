@@ -3,22 +3,23 @@
     background-color: $background-color;
     padding: 150px;
     text-align: center;
+
     .contact-tittle {
         justify-content: center;
-        .contact-tittle h1 {
-            margin-bottom: $margin-bottom;
-            font-size: $font-size-large;
+
+        h1 {
+            @include margin-bottom($margin-bottom);
+            @include font-size($font-size-large);
             color: $text-color-dark;
         }
         
-        .contact-tittle p {
-            margin-bottom: $margin-bottom;
-            font-size: $font-size-medium;
+        p {
+            @include margin-bottom($margin-bottom);
+            @include font-size($font-size-medium);
             color: $text-color-dark;
         }
     }
 }
-
 
 .whatsapp-form {
     label {
@@ -30,22 +31,13 @@
     input,
     textarea {
         width: 100%;
-        padding: $padding-form;
+        @include padding-form($padding-form);
         margin-bottom: 15px;
-        font-size: $font-size-small;
+        @include font-size($font-size-small);
     }
 
     button {
-        padding: $padding-form 30px;
-        background-color: $button-bg-color;
-        border: none;
-        border-radius: $border-radius;
-        color: white;
-        font-size: $font-size-button;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $button-bg-color-hover;
-        }
+        @include button-style($button-bg-color, $button-bg-color-hover, $padding-form 30px, $border-radius);
+        @include font-size($font-size-button);
     }
 }

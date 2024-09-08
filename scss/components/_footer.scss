@@ -1,9 +1,12 @@
 /* FOOTER para todos */
+// Estilos para el footer
 footer {
-    $footer-bg-color: #f8f9fa;
-    $footer-padding: 20px;
-    $footer-text-align: center;
-    $footer-font-size: 15px;
-    $footer-text-color: #6c757d;
-    $footer-border-color: 1px solid #e9ecef;
+    @include footer-style(
+        $footer-bg-color,       // $bg-color
+        $footer-padding,        // $padding
+        $footer-text-align,     // $text-align
+        $footer-font-size,      // $font-size
+        $footer-text-color,     // $text-color
+        $footer-border-color    // $border
+    );
 }

@@ -1,27 +1,20 @@
 /*SECCION NOSOTROS*/
-
+/* SECCION NOSOTROS */
 
 .img-custom {
-    width: $img-custom-width; /* Ancho de la imagen */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+    @include img-size($img-custom-width); /* Usando el mixin para el tamaño de la imagen */
 }
 
 .section-grey {
-    background-color: $section-grey-bg-color; /* Fondo gris claro */
-    padding: $section-grey-padding; /* Espacio alrededor del contenido */
-    border-radius: $section-grey-border-radius; /* Bordes redondeados */
-    max-width: $img-custom-width; /* Ancho máximo de la sección */
-    margin: 0 auto; /* Centrar la sección */
+    @include section-style($section-grey-bg-color, $section-grey-padding, $section-grey-border-radius, $img-custom-width); /* Usando el mixin para la sección */
 
     .img-custom {
-        width: $img-custom-width;
-        object-fit: cover;
+        @include img-size($img-custom-width);
     }
 }
 
 .carousel-custom {
     img {
-        width: $carousel-img-width;
-        height: auto; /* Mantiene la proporción de la imagen */
+        @include img-size($carousel-img-width, auto); /* Usando el mixin para el tamaño de la imagen del carrusel */
     }
 }

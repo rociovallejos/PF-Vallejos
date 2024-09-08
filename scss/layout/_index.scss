@@ -1,0 +1,11 @@
+.custom-block {
+    height: auto;
+    background-color: $custom-block-bg-color; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $custom-block-padding; 
+    text-align: center;
+    margin-top: $custom-block-margin-top; 
+    margin-bottom: $custom-block-margin-bottom; 
+}

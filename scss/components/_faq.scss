@@ -22,16 +22,18 @@
             margin-bottom: $faq-margin-bottom-item;
 
             .faq-question {
-                background-color: $faq-question-bg-color;
-                border: 1px solid $faq-border-color;
-                border-radius: $faq-border-radius;
-                padding: $faq-padding-item;
+                @include faq-item-style(
+                    $faq-question-bg-color,
+                    $faq-border-color,
+                    $faq-border-radius,
+                    $faq-padding-item,
+                    left // No se aplica estilo a .arrow
+                );
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 cursor: pointer;
-                text-align: left;
 
                 .arrow {
                     font-size: $arrow-font-size;
@@ -40,11 +42,13 @@
             }
 
             .faq-answer {
+                @include faq-answer-style(
+                    $faq-answer-bg-color,
+                    $faq-border-color,
+                    $faq-border-radius,
+                    $faq-padding-item
+                );
                 display: none;
-                padding: $faq-padding-item;
-                background-color: $faq-answer-bg-color;
-                border: 1px solid $faq-border-color;
-                border-radius: $faq-border-radius;
                 margin-top: 5px;
             }
 
