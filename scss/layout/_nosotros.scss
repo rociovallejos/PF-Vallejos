@@ -7,6 +7,7 @@
 
 .section-grey {
     @include section-style($section-grey-bg-color, $section-grey-padding, $section-grey-border-radius, $img-custom-width); /* Usando el mixin para la sección */
+     
 
     .img-custom {
         @include img-size($img-custom-width);
