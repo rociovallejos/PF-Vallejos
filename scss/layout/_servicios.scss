@@ -3,7 +3,7 @@
 .servi-section {
   padding: $servi-section-padding;
   background-color: $servi-section-bg-color;
-  text-align: center;
+  text-align: $servi-section-text-align;
 
   h2 {
       margin-bottom: $servi-section-h2-margin-bottom;
@@ -27,7 +27,7 @@
           $servi-card-border-radius,
           $servi-card-box-shadow,
           $servi-card-padding,
-          $servi-card-text-align
+          $servi-card-text-align,
       );
 
       // Aplica la clase de animación

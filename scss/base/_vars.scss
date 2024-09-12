@@ -1,9 +1,13 @@
 $font-family: 'Roboto';
+/*NAVBAR*/
 $color-primary: #004e9b;
 $color-secondary: #0f5eae;
+$color-white: #fff;
+
+
 $color-light: #f9f9f9;
 $color-dark: #333;
-$color-white: #fff;
+
 $color-grey-light: #f2f2f2;
 $color-grey-dark: #ddd;
 $shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,6 +40,7 @@ $servi-section-bg-color: #f9f9f9;
 $servi-section-h2-margin-bottom: 80px;
 $servi-section-h2-font-size: 28px;
 $servi-section-h2-color: #333;
+$servi-section-text-align: center;
 
 $grid-gap: 20px;
 $grid-max-width: 1200px;
@@ -105,7 +110,7 @@ $clientes-category-p-color: #333;
 
 
 // Sección contacto
-$background-color: #c1c7d0;
+$background-color: #dbdbdb;
 $text-color-dark: #333;
 $text-color-light: #000000;
 $button-bg-color: #255fd3;
@@ -124,6 +129,7 @@ $canal-padding: 130px;
 $canal-text-align: center;
 $section-title-font-size: 35px;
 $section-title-color: #333;
+$section-title-align: center;
 $section-title-margin-bottom: 20px;
 $youtube-container-bg-color: #f2f2f2;
 $youtube-container-padding: 20px 100px;
@@ -177,3 +183,4 @@ $arrow-font-size: 1.2em;
 $card-hover-scale: 1.05; 
 $card-hover-transition: 0.5s ease-in-out; 
 $card-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+

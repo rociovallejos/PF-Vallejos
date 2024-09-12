@@ -1,4 +1,4 @@
-/* MEDIAQUERIES */
+/* MEDIAQUERIES CON ANCHO 767PX */
 /* Navbar */
 @media (max-width: 767px) {
     .navbar-custom {
@@ -26,43 +26,82 @@
 /* Banner */
 @media (max-width: 767px) {
     .banner {
-        height: 60vh; /* Ajusta la altura del banner en móviles */
+        height: 30vh; /* Ajusta la altura del banner en móviles */
     }
 
-    .banner h2 {
-        font-size: 36px; /* Ajusta el tamaño de la fuente del texto del banner */
-        left: 20px; /* Ajusta la posición horizontal del texto */
+    .banner h1 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente en móviles si es necesario */
+        left: 50px; /* Ajusta la posición horizontal del texto */
+        bottom: 60px; /* Ajusta la posición vertical del texto */
     }
+}
+
+/* Sección Nosotros */
+@media (max-width: 767px) {
+    p {
+        font-size: 10px;
+    }
+}
+
+/* Sección Novedades */
+@media (max-width: 767px) {
+    .canal-section {
+        .section-title {
+            font-size: 13px
+        }
+        .youtube-container {
+            padding: 40px 40px
+        }
+
+
+    }
+    
 }
 
 /* Sección Servicios */
 @media (max-width: 767px) {
+
+    .servi-section {
+        padding: 150px 20px;
+        background-color: #f9f9f9;
+        text-align: center; 
+    }
+    .servi-section h2 {
+        font-size: 24px;
+    }
+
+    
+
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr); /* Cambia la cantidad de columnas a 2 en móviles */
+        grid-template-rows: 180px 180px 180px;
+        gap: 20px;
+        
+    
+        .servi-card h3 {
+            font-size: 13px; /* Ajusta el tamaño del texto */
+        }
+    
+        .servi-card p {
+            font-size: 10px; /* Ajusta el tamaño del texto del párrafo */
+        }
     }
 
-    .servi-card {
-        padding: 10px; /* Reduce el padding de las tarjetas */
-    }
-
-    .servi-card h3 {
-        font-size: 1rem; /* Ajusta el tamaño del texto */
-    }
-
-    .servi-card p {
-        font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
-    }
 }
+
+
+
 
 /* Sección Clientes */
 @media (max-width: 767px) {
     .clientes-seccion {
-        padding: 30px 10px; /* Ajusta el padding de la sección */
+        padding: 120px 20px; /* Ajusta el padding de la sección */
     }
 
     .clientes-seccion h2 {
-        font-size: 2rem; /* Ajusta el tamaño de la fuente */
-        margin-bottom: 20px; /* Ajusta el margen inferior */
+        font-size: 24px; /* Ajusta el tamaño de la fuente */
+        margin-bottom: 80px; /* Ajusta el margen inferior */
     }
 
     .clientes-grid {
@@ -104,5 +143,132 @@
     .whatsapp-form button {
         padding: 10px 20px; /* Ajusta el padding del botón */
         font-size: 14px; /* Ajusta el tamaño de la fuente del botón */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIAQUERIES CON ANCHO 414px */
+@media (max-width: 414px) and (max-height: 896px) {
+    
+    /* Navbar */
+    .navbar-custom {
+        background-color: $color-primary;
+    }
+
+    .navbar-img {
+        height: 80px; /* Ajusta el tamaño del logo en dispositivos móviles */
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0; /* Ajusta el margen de los elementos de navegación */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px; /* Ajusta el padding para mejor usabilidad en móviles */
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Banner */
+    .banner {
+        height: 60vh; /* Ajusta la altura del banner en móviles */
+    }
+
+    .banner h1 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente */
+        left: 20px; /* Ajusta la posición horizontal del texto */
+        bottom: 40px; /* Ajusta la posición vertical del texto */
+    }
+
+    /* Sección Novedades */
+    .canal-section {
+        .section-title {
+            font-size: 18px; /* Ajusta el tamaño del título */
+        }
+
+        .youtube-container {
+            padding: 15px; /* Ajusta el padding del contenedor de YouTube */
+        }
+    }
+
+    /* Sección Servicios */
+    .servi-section {
+        padding: 100px 15px; /* Ajusta el padding */
+        text-align: center; /* Centra el texto */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+        gap: 20px;
+        
+        .servi-card h3 {
+            font-size: 14px; /* Ajusta el tamaño del texto */
+        }
+    
+        .servi-card p {
+            font-size: 12px; /* Ajusta el tamaño del texto del párrafo */
+        }
+    }
+
+    /* Sección Clientes */
+    .clientes-seccion {
+        padding: 100px 15px; /* Ajusta el padding */
+    }
+
+    .clientes-seccion h2 {
+        font-size: 22px; /* Ajusta el tamaño de la fuente */
+        margin-bottom: 60px; /* Ajusta el margen inferior */
+    }
+
+    .clientes-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+    }
+
+    .clientes-category {
+        padding: 10px; /* Ajusta el padding de las tarjetas */
+    }
+
+    .clientes-category h3 {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+
+    .clientes-category p {
+        font-size: 12px; /* Ajusta el tamaño del párrafo */
+    }
+
+    /* Sección Contacto */
+    .contact-section {
+        padding: 60px 20px; /* Ajusta el padding */
+    }
+
+    .contact-tittle h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .contact-tittle p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .whatsapp-form input,
+    .whatsapp-form textarea {
+        font-size: 14px; /* Ajusta el tamaño de los campos */
+    }
+
+    .whatsapp-form button {
+        padding: 10px 20px; /* Ajusta el padding del botón */
+        font-size: 14px; /* Ajusta el tamaño del texto del botón */
     }
 }

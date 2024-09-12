@@ -6,7 +6,7 @@
     @include text-style(null, null, $canal-text-align);
 
     .section-title {
-        @include text-style($section-title-font-size, $section-title-color, center);
+        @include text-style($section-title-font-size, $section-title-color, $section-title-align);
         margin-bottom: $section-title-margin-bottom;
     }
 
