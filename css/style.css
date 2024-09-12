@@ -539,14 +539,34 @@ footer {
     text-align: center; /* Centra el texto */
   }
   .grid-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
     gap: 20px;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    padding: 20px; /* Padding del contenedor */
   }
-  .grid-container .servi-card h3 {
-    font-size: 14px; /* Ajusta el tamaño del texto */
+  .servi-card {
+    padding: 10px; /* Padding dentro de cada tarjeta */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro de la tarjeta */
   }
-  .grid-container .servi-card p {
-    font-size: 12px; /* Ajusta el tamaño del texto del párrafo */
+  .servi-card img {
+    width: 20px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+  }
+  .servi-card h3 {
+    font-size: 12px; /* Ajusta el tamaño del texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 5px;
+  }
+  .servi-card p {
+    font-size: 11px; /* Ajusta el tamaño del texto del párrafo */
+    text-align: center; /* Centra el texto */
+  }
+  .whatsapp-button {
+    font-size: 11px;
   }
   /* Sección Clientes */
   .clientes-seccion {
