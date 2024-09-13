@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*NAVBAR*/
+/*navbar*/
 /*INDEX*/
 /*footer */
 /*Seccion nosotros*/
@@ -108,6 +108,7 @@
   border-radius: 5px;
   padding: 10px;
   text-align: left;
+  font-size: 15px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -642,7 +643,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-size: 10px;
 }
 .faq-section .faq-container .faq-item .faq-question .arrow {
   font-size: 14px;
