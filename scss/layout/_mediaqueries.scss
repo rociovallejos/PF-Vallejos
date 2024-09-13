@@ -95,28 +95,31 @@
 @media (max-width: 767px) {
     .clientes-seccion {
         padding: 120px 20px; /* Ajusta el padding de la sección */
+        
+        .clientes-seccion h2 {
+            font-size: 24px; /* Ajusta el tamaño de la fuente */
+            margin-bottom: 80px; /* Ajusta el margen inferior */
+        }
     }
 
-    .clientes-seccion h2 {
-        font-size: 24px; /* Ajusta el tamaño de la fuente */
-        margin-bottom: 80px; /* Ajusta el margen inferior */
-    }
 
     .clientes-grid {
         grid-template-columns: repeat(1, 1fr); /* Cambia la cantidad de columnas a 1 en móviles */
+        .clientes-category {
+            padding: 10px; /* Reduce el padding de las tarjetas */
+
+            .clientes-category h3 {
+                font-size: 1.2rem; /* Ajusta el tamaño del texto */
+            }
+        
+            .clientes-category p {
+                font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
+            }
+        }
     }
 
-    .clientes-category {
-        padding: 10px; /* Reduce el padding de las tarjetas */
-    }
+    
 
-    .clientes-category h3 {
-        font-size: 1.2rem; /* Ajusta el tamaño del texto */
-    }
-
-    .clientes-category p {
-        font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
-    }
 }
 
 /* Sección Contacto */
@@ -157,7 +160,7 @@
 
 /* MEDIAQUERIES CON ANCHO 414px */
 @media (max-width: 414px) and (max-height: 896px) {
-    
+
     /* Navbar */
     .navbar-custom {
         background-color: $color-primary;
@@ -180,6 +183,14 @@
         font-size: 14px; /* Ajusta el tamaño de la fuente */
     }
 
+}
+    
+    
+
+
+
+
+@media (max-width: 414px) and (max-height: 896px) {
     /* Banner */
     .banner {
         height: 250px; /* Ajusta la altura del banner en móviles */
@@ -192,29 +203,29 @@
         bottom: 40px; /* Ajusta la posición vertical del texto */
     }
 
-    /* Sección Novedades */
-    .canal-section {
-        .section-title {
-            font-size: 18px; /* Ajusta el tamaño del título */
-        }
+}
+    
 
-        .youtube-container {
-            padding: 15px; /* Ajusta el padding del contenedor de YouTube */
-        }
-    }
 
-    /* Sección Servicios */
+/* Sección Servicios */
+@media (max-width: 414px) and (max-height: 896px) {
+
     .servi-section {
-        padding: 100px 15px; /* Ajusta el padding */
+        padding: 90px 15px; /* Ajusta el padding */
+        background-color: #f9f9f9;
         text-align: center; /* Centra el texto */
     }
+    .servi-section h2 {
+        font-size: 20px;
+    }
+
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
-        gap: 20px;
-        justify-content: center; /* Centra las tarjetas horizontalmente */
-        padding: 20px; /* Padding del contenedor */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 160px 160px 160px;
+        gap: 15px;
+        justify-content: center; 
     }
     
     .servi-card {
@@ -248,52 +259,173 @@
 
 
 
-    /* Sección Clientes */
-    .clientes-seccion {
+}
+
+/* Sección Clientes */    
+@media (max-width: 414px) and (max-height: 896px) {
+     .clientes-seccion {
         padding: 100px 15px; /* Ajusta el padding */
     }
-
     .clientes-seccion h2 {
-        font-size: 22px; /* Ajusta el tamaño de la fuente */
+        font-size: 20px; /* Ajusta el tamaño de la fuente */
         margin-bottom: 60px; /* Ajusta el margen inferior */
     }
 
+
     .clientes-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+        grid-template-rows: 160px 160px;
+        gap: 15px;
+        justify-content: center; 
+        
+        .clientes-category {
+            padding: 20px; /* Ajusta el padding de las tarjetas */
+        }
+    
+        .clientes-category img {
+            width: 28px; /* Ajusta el ancho de la imagen */
+            height: auto; /* Mantiene la proporción */ 
+
+        }
+
+        .clientes-category h3 {
+            font-size: 12px; /* Ajusta el tamaño del texto */
+            text-align: center; /* Centra el texto */
+        }
+    
+        .clientes-category p {
+            font-size: 11px; /* Ajusta el tamaño del párrafo */
+        }
+    
     }
 
-    .clientes-category {
-        padding: 10px; /* Ajusta el padding de las tarjetas */
+
+
+}
+
+
+/* Sección Novedades */
+@media (max-width: 414px) and (max-height: 896px) {
+    .canal-section {
+        padding: 50px 20px;
+        .section-title {
+            font-size: 18px; /* Ajusta el tamaño del título */
+        }
+    
+        .youtube-container {
+            padding: 40px 55px; /* Ajusta el padding del contenedor de YouTube */
+        }
+        
+
+
+        .description-container {
+            margin-top: 75px;
+            
+            .section-description {
+                p{
+                    font-size: 10px;
+                    
+                }
+            }
+        }
+
     }
 
-    .clientes-category h3 {
-        font-size: 16px; /* Ajusta el tamaño del texto */
-    }
+    
 
-    .clientes-category p {
-        font-size: 12px; /* Ajusta el tamaño del párrafo */
-    }
 
-    /* Sección Contacto */
+
+}  
+    
+/* Sección preguntas frecuentes */
+.faq-title {
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.faq-section {
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+
+    .faq-container {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 5px;
+        padding: 30px 20px;
+
+        .faq-item {
+
+            .faq-question {
+                
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                font-size: 10px;
+
+
+                .arrow {
+                    font-size: 14px;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            .faq-answer {
+                display: none;
+                margin-top: 5px;
+            }
+
+            &.open {
+                .faq-answer {
+                    display: block;
+                }
+
+                .faq-question .arrow {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Sección Contacto */
+@media (max-width: 414px) and (max-height: 896px) {
     .contact-section {
-        padding: 60px 20px; /* Ajusta el padding */
+        padding: 100px 30px; /* Ajusta el padding */
+
+        .contact-tittle h1 {
+            font-size: 20px; /* Ajusta el tamaño del título */
+        }
+    
+        .contact-tittle p {
+            font-size: 15px; /* Ajusta el tamaño del párrafo */
+            margin-top: 8px;
+        }
     }
 
-    .contact-tittle h1 {
-        font-size: 1.5rem; /* Ajusta el tamaño del título */
-    }
-
-    .contact-tittle p {
-        font-size: 1rem; /* Ajusta el tamaño del párrafo */
-    }
-
+   
     .whatsapp-form input,
     .whatsapp-form textarea {
-        font-size: 14px; /* Ajusta el tamaño de los campos */
+        width: 100%;
+        padding: 5px 19px;
+        margin-bottom: 15px;
+        font-size: 10px; /* Ajusta el tamaño de los campos */
     }
 
     .whatsapp-form button {
-        padding: 10px 20px; /* Ajusta el padding del botón */
-        font-size: 14px; /* Ajusta el tamaño del texto del botón */
+        margin-top: 30px;
+        padding: 5px 19px; /* Ajusta el padding del botón */
+        font-size: 10px; /* Ajusta el tamaño del texto del botón */
     }
 }
