@@ -4,7 +4,6 @@
         opacity: 1;
     }
 }
-
 // ANIMACION HOVER PARA CARDS
 @keyframes scale-up {
     from {
@@ -14,7 +13,6 @@
         transform: scale($card-hover-scale);
     }
 }
-
 // Animación de sombra para cards
 @keyframes shadow-expand {
     from {
@@ -24,7 +22,6 @@
         box-shadow: $card-hover-shadow;
     }
 }
-
 // Clase para el efecto hover en cards
 .card-hover-effect {
     transition: transform $card-hover-transition, 
@@ -35,4 +32,3 @@
         box-shadow: $card-hover-shadow; 
     }
 }
-

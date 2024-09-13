@@ -4,18 +4,15 @@
     @include padding-spacing($canal-padding);
     background-color: $canal-bg-color;
     @include text-style(null, null, $canal-text-align);
-
     .section-title {
         @include text-style($section-title-font-size, $section-title-color, $section-title-align);
         margin-bottom: $section-title-margin-bottom;
     }
-
     .youtube-container {
         background-color: $youtube-container-bg-color;
         @include padding-spacing($youtube-container-padding);
         @include center-block($youtube-container-max-width);
         @include rounded-borders($youtube-container-border-radius);
-
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%; /* Mantiene una proporción de 16:9 */
@@ -25,7 +22,6 @@
             background-color: $video-wrapper-bg-color;
             @include rounded-borders($video-wrapper-border-radius);
             margin-bottom: $video-wrapper-margin-bottom;
-
             iframe {
                 position: absolute;
                 top: 0;
@@ -35,24 +31,20 @@
             }
         }
     }
-
     .description-container {
         @include text-style($description-container-font-size, $description-container-color, $section-description-text-align);
         @include center-block($description-container-max-width);
-
         .section-description {
-            margin-top: $section-description-margin-top;
+        margin-top: $section-description-margin-top;
         }
     }
 }
-
 .info-block {
     background-color: $info-block-bg-color;
     color: $info-block-text-color;
     @include text-style($info-block-font-size, $info-block-text-color, $info-block-text-align);
     @include padding-spacing($info-block-padding);
     letter-spacing: $info-block-letter-spacing;
-
     p {
         margin: 0;
     }

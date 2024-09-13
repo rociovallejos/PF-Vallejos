@@ -3,16 +3,13 @@
     background-color: $background-color;
     padding: 150px;
     text-align: center;
-
     .contact-tittle {
         justify-content: center;
-
         h1 {
             @include margin-bottom($margin-bottom);
             @include font-size($font-size-large);
             color: $text-color-dark;
         }
-        
         p {
             @include margin-bottom($margin-bottom);
             @include font-size($font-size-medium);
@@ -20,14 +17,12 @@
         }
     }
 }
-
 .whatsapp-form {
     label {
         display: block;
         margin-bottom: 5px;
         color: $text-color-light;
     }
-
     input,
     textarea {
         width: 100%;
@@ -35,7 +30,6 @@
         margin-bottom: 15px;
         @include font-size($font-size-small);
     }
-
     button {
         @include button-style($button-bg-color, $button-bg-color-hover, $padding-form 30px, $border-radius);
         @include font-size($font-size-button);

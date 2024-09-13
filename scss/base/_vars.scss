@@ -3,22 +3,17 @@ $font-family: 'Roboto';
 $color-primary: #004e9b;
 $color-secondary: #0f5eae;
 $color-white: #fff;
-
-
 $color-light: #f9f9f9;
 $color-dark: #333;
-
 $color-grey-light: #f2f2f2;
 $color-grey-dark: #ddd;
 $shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 $transition: 0.3s ease;
-
 /*INDEX*/
 $custom-block-bg-color: #ffffff; 
 $custom-block-padding: 20px; 
 $custom-block-margin-top: 80px; 
 $custom-block-margin-bottom: 80px; 
-
 /*footer */
 $footer-bg-color: #f8f9fa;
 $footer-padding: 20px;
@@ -26,14 +21,12 @@ $footer-text-align: center;
 $footer-font-size: 15px;
 $footer-text-color: #6c757d;
 $footer-border-color: #e9ecef;
-
 /*Seccion nosotros*/
 $img-custom-width: 700px;
 $section-grey-bg-color: #f0f0f0;
 $section-grey-padding: 40px 20px;
 $section-grey-border-radius: 10px;
 $carousel-img-width: 100%;
-
 /*Seccion servicios*/
 $servi-section-padding: 150px 20px;
 $servi-section-bg-color: #f9f9f9;
@@ -41,32 +34,25 @@ $servi-section-h2-margin-bottom: 80px;
 $servi-section-h2-font-size: 28px;
 $servi-section-h2-color: #333;
 $servi-section-text-align: center;
-
 $grid-gap: 20px;
 $grid-max-width: 1200px;
 $grid-margin: 0 auto;
-
 $servi-card-bg-color: #fff;
 $servi-card-border-color: #ddd;
 $servi-card-border-radius: 10px;
 $servi-card-padding: 20px;
 $servi-card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 $servi-card-text-align: center;
-
 $servi-card-img-max-width: 100%;
 $servi-card-img-height: auto;
 $servi-card-img-margin-bottom: 15px;
-
 $servi-card-h3-font-size: 1.25rem;
 $servi-card-h3-margin-bottom: 10px;
-
 $servi-card-p-font-size: 1rem;
 $servi-card-p-line-height: 1.5;
-
 //.button-container
 $button-container-margin-top: 95px;
 $button-container-alignment: center;
-
 //.whatsapp-button
 $whatsapp-button-bg-color: #3578e5;
 $whatsapp-button-hover-bg-color: #2859a6;
@@ -74,41 +60,32 @@ $whatsapp-button-color: #fff;
 $whatsapp-button-padding: 10px 20px;
 $whatsapp-button-border-radius: 5px;
 $whatsapp-button-font-weight: bold;
-
 $whatsapp-button-bg-color: #3578e5;
 $whatsapp-button-hover-bg-color: #2859a6;
 $whatsapp-button-color: #fff;
 $whatsapp-button-padding: 10px 20px;
 $whatsapp-button-border-radius: 5px;
 $whatsapp-button-font-weight: bold;
-
 $clientes-seccion-padding: 150px 20px;
 $clientes-seccion-bg-color: #f2f2f2;
 $clientes-seccion-h2-margin-bottom: 80px;
 $clientes-seccion-h2-font-size: 28px;
 $clientes-seccion-h2-color: #333;
-
 $clientes-grid-gap: 30px;
 $clientes-grid-max-width: 1200px;
 $clientes-grid-margin: 0 auto;
-
 $clientes-category-bg-color: #fff;
 $clientes-category-border-color: #ddd;
 $clientes-category-border-radius: 10px;
 $clientes-category-padding: 20px;
 $clientes-category-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 $clientes-category-img-max-width: 80px;
 $clientes-category-img-margin-bottom: 15px;
-
 $clientes-category-h3-font-size: 20px;
 $clientes-category-h3-margin-bottom: 10px;
-
 $clientes-category-p-font-size: 1rem;
 $clientes-category-p-line-height: 1.5;
 $clientes-category-p-color: #333;
-
-
 // Sección contacto
 $background-color: #dbdbdb;
 $text-color-dark: #333;
@@ -122,7 +99,6 @@ $font-size-button: 16px;
 $padding-form: 10px;
 $margin-bottom: 30px;
 $border-radius: 5px;
-
 // Sección novedades
 $canal-bg-color: #fff;
 $canal-padding: 130px;
@@ -138,21 +114,17 @@ $youtube-container-border-radius: 8px;
 $video-wrapper-bg-color: #000;
 $video-wrapper-border-radius: 8px;
 $video-wrapper-margin-bottom: 20px;
-
 $description-container-font-size: 22px;  
 $description-container-color: #333; 
 $description-container-max-width: 600px;  
 $section-description-margin-top: 75px;  
 $section-description-text-align: center;
-
 $info-block-bg-color: #3578e5; 
 $info-block-text-color: rgb(255, 255, 255); 
 $info-block-text-align: center; 
 $info-block-padding: 15px 0; 
 $info-block-font-size: 20px; 
- 
 $info-block-letter-spacing: 1px; 
-
 //seccion FAQS
 $faq-title-font-size: 25px;
 $faq-title-color: #333;
@@ -167,8 +139,6 @@ $faq-padding-inner: 20px;
 $faq-margin-bottom-item: 10px;
 $faq-padding-item: 10px;
 $arrow-font-size: 1.2em;
-
-
 // banner
 $banner-height: 80vh;
 $banner-overlay-color: rgba(39, 61, 142, 0.526);
@@ -178,11 +148,7 @@ $banner-title-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 $custom-block-height: 50vh;
 $custom-block-bg-color: white;
 $custom-block-padding: 20px;
-
-
-
 /* ANIMACION CARDS SECCION SERVICIOS */
 $card-hover-scale: 1.05; 
 $card-hover-transition: 0.5s ease-in-out; 
 $card-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-

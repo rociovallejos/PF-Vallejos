@@ -4,45 +4,37 @@
     .navbar-custom {
         $color-primary: #004e9b;
     }
-
     .navbar-img {
         height: 80px; /* Ajusta el tamaño del logo en dispositivos móviles */
     }
-
     .navbar-nav {
         text-align: center;
     }
-
     .navbar-nav .nav-item {
         margin: 0; /* Ajusta el margen de los elementos de navegación */
     }
-
     .navbar-nav .nav-link {
         padding: 10px; /* Ajusta el padding para mejor usabilidad en móviles */
         font-size: 14px; /* Ajusta el tamaño de la fuente */
     }
 }
-
 /* Banner */
 @media (max-width: 767px) {
     .banner {
         height: 30vh; /* Ajusta la altura del banner en móviles */
     }
-
     .banner h1 {
         font-size: 24px; /* Ajusta el tamaño de la fuente en móviles si es necesario */
         left: 50px; /* Ajusta la posición horizontal del texto */
         bottom: 60px; /* Ajusta la posición vertical del texto */
     }
 }
-
 /* Sección Nosotros */
 @media (max-width: 767px) {
     p {
         font-size: 10px;
     }
 }
-
 /* Sección Novedades */
 @media (max-width: 767px) {
     .canal-section {
@@ -57,10 +49,8 @@
     }
     
 }
-
 /* Sección Servicios */
 @media (max-width: 767px) {
-
     .servi-section {
         padding: 150px 20px;
         background-color: #f9f9f9;
@@ -69,147 +59,95 @@
     .servi-section h2 {
         font-size: 24px;
     }
-
-    
     .grid-container {
         grid-template-columns: repeat(2, 1fr); /* Cambia la cantidad de columnas a 2 en móviles */
         grid-template-rows: 180px 180px 180px;
         gap: 20px;
-        
-    
         .servi-card h3 {
             font-size: 13px; /* Ajusta el tamaño del texto */
         }
-    
         .servi-card p {
             font-size: 10px; /* Ajusta el tamaño del texto del párrafo */
         }
     }
 
 }
-
-
-
-
 /* Sección Clientes */
 @media (max-width: 767px) {
     .clientes-seccion {
         padding: 120px 20px; /* Ajusta el padding de la sección */
-        
         .clientes-seccion h2 {
             font-size: 24px; /* Ajusta el tamaño de la fuente */
             margin-bottom: 80px; /* Ajusta el margen inferior */
         }
     }
-
-
     .clientes-grid {
         grid-template-columns: repeat(1, 1fr); /* Cambia la cantidad de columnas a 1 en móviles */
         .clientes-category {
             padding: 10px; /* Reduce el padding de las tarjetas */
-
             .clientes-category h3 {
                 font-size: 1.2rem; /* Ajusta el tamaño del texto */
             }
-        
             .clientes-category p {
                 font-size: 0.875rem; /* Ajusta el tamaño del texto del párrafo */
             }
         }
     }
-
-    
-
 }
-
 /* Sección Contacto */
 @media (max-width: 767px) {
     .contact-section {
         padding: 80px 20px; /* Ajusta el padding de la sección */
     }
-
     .contact-tittle h1 {
         font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
     }
-
     .contact-tittle p {
         font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
     }
-
     .whatsapp-form input,
     .whatsapp-form textarea {
         font-size: 14px; /* Ajusta el tamaño de la fuente en el formulario */
     }
-
     .whatsapp-form button {
         padding: 10px 20px; /* Ajusta el padding del botón */
         font-size: 14px; /* Ajusta el tamaño de la fuente del botón */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIAQUERIES CON ANCHO 414px */
 @media (max-width: 414px) and (max-height: 896px) {
-
     /* Navbar */
     .navbar-custom {
         background-color: $color-primary;
     }
-
     .navbar-img {
         height: 80px; /* Ajusta el tamaño del logo en dispositivos móviles */
     }
-
     .navbar-nav {
         text-align: center;
     }
-
     .navbar-nav .nav-item {
         margin: 0; /* Ajusta el margen de los elementos de navegación */
     }
-
     .navbar-nav .nav-link {
         padding: 10px; /* Ajusta el padding para mejor usabilidad en móviles */
         font-size: 14px; /* Ajusta el tamaño de la fuente */
     }
-
 }
-    
-    
-
-
-
-
 @media (max-width: 414px) and (max-height: 896px) {
     /* Banner */
     .banner {
         height: 250px; /* Ajusta la altura del banner en móviles */
     }
-
     .banner h1 {
         font-size: 25px; /* Ajusta el tamaño de la fuente */
         font-weight: 500;
         left: 30px; /* Ajusta la posición horizontal del texto */
         bottom: 40px; /* Ajusta la posición vertical del texto */
     }
-
 }
-    
-
-
 /* Sección Servicios */
 @media (max-width: 414px) and (max-height: 896px) {
-
     .servi-section {
         padding: 90px 15px; /* Ajusta el padding */
         background-color: #f9f9f9;
@@ -218,8 +156,6 @@
     .servi-section h2 {
         font-size: 20px;
     }
-
-
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -227,7 +163,6 @@
         gap: 15px;
         justify-content: center; 
     }
-    
     .servi-card {
         padding: 10px; /* Padding dentro de cada tarjeta */
         box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
@@ -235,32 +170,23 @@
         flex-direction: column;
         align-items: center; /* Centra el contenido dentro de la tarjeta */
     }
-    
     .servi-card img {
         width: 20px; /* Ajusta el ancho de la imagen */
         height: auto; /* Mantiene la proporción */ 
     }
-    
     .servi-card h3 {
         font-size: 12px; /* Ajusta el tamaño del texto */
         text-align: center; /* Centra el texto */
         margin-bottom: 5px;
     }
-    
     .servi-card p {
         font-size: 11px; /* Ajusta el tamaño del texto del párrafo */
         text-align: center; /* Centra el texto */
     }
-
     .whatsapp-button {
         font-size: 11px;
-
     }
-
-
-
 }
-
 /* Sección Clientes */    
 @media (max-width: 414px) and (max-height: 896px) {
      .clientes-seccion {
@@ -270,40 +196,27 @@
         font-size: 20px; /* Ajusta el tamaño de la fuente */
         margin-bottom: 60px; /* Ajusta el margen inferior */
     }
-
-
     .clientes-grid {
         grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
         grid-template-rows: 160px 160px;
         gap: 15px;
         justify-content: center; 
-        
         .clientes-category {
             padding: 20px; /* Ajusta el padding de las tarjetas */
         }
-    
         .clientes-category img {
             width: 28px; /* Ajusta el ancho de la imagen */
             height: auto; /* Mantiene la proporción */ 
-
         }
-
         .clientes-category h3 {
             font-size: 12px; /* Ajusta el tamaño del texto */
             text-align: center; /* Centra el texto */
         }
-    
         .clientes-category p {
             font-size: 11px; /* Ajusta el tamaño del párrafo */
         }
-    
     }
-
-
-
 }
-
-
 /* Sección Novedades */
 @media (max-width: 414px) and (max-height: 896px) {
     .canal-section {
@@ -311,78 +224,54 @@
         .section-title {
             font-size: 18px; /* Ajusta el tamaño del título */
         }
-    
         .youtube-container {
             padding: 40px 55px; /* Ajusta el padding del contenedor de YouTube */
         }
-        
-
-
         .description-container {
             margin-top: 75px;
-            
             .section-description {
                 p{
                     font-size: 10px;
-                    
                 }
             }
         }
-
     }
-
-    
-
-
-
-}  
-    
+}    
 /* Sección preguntas frecuentes */
 .faq-title {
     margin-bottom: 50px;
     font-size: 20px;
     text-align: center;
 }
-
 .faq-section {
     padding: 50px 10px;
     display: flex;
     justify-content: center;
-
     .faq-container {
         width: 100%;
         max-width: 800px;
         border-radius: 5px;
         padding: 30px 20px;
-
         .faq-item {
-
             .faq-question {
-                
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 cursor: pointer;
-                
-
-
                 .arrow {
                     font-size: 14px;
                     transition: transform 0.3s ease;
                 }
             }
-
             .faq-answer {
                 display: none;
                 margin-top: 5px;
             }
-
             &.open {
                 .faq-answer {
                     display: block;
                 }
-
                 .faq-question .arrow {
                     transform: rotate(180deg);
                 }
@@ -390,31 +279,18 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
 /* Sección Contacto */
 @media (max-width: 414px) and (max-height: 896px) {
     .contact-section {
         padding: 100px 30px; /* Ajusta el padding */
-
         .contact-tittle h1 {
             font-size: 20px; /* Ajusta el tamaño del título */
         }
-    
         .contact-tittle p {
             font-size: 15px; /* Ajusta el tamaño del párrafo */
             margin-top: 8px;
         }
     }
-
-   
     .whatsapp-form input,
     .whatsapp-form textarea {
         width: 100%;
@@ -422,7 +298,6 @@
         margin-bottom: 15px;
         font-size: 10px; /* Ajusta el tamaño de los campos */
     }
-
     .whatsapp-form button {
         margin-top: 30px;
         padding: 5px 19px; /* Ajusta el padding del botón */

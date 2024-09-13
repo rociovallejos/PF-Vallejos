@@ -1,6 +1,5 @@
 .banner {
     @include banner-style($banner-height, $banner-overlay-color);
-    
     img {
         width: 100%;
         height: 100%;
@@ -8,16 +7,10 @@
         opacity: 0;
         animation: fadeIn 1s ease forwards;
     }
-
     h1 {
         @include banner-title($banner-title-color, $banner-title-font-size, $banner-title-text-shadow);
     }
 }
-
-
-
-
-
 /* Custom Block */
 .custom-block {
     @include custom-block-style($custom-block-height, $custom-block-bg-color, $custom-block-padding);

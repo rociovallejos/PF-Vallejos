@@ -5,22 +5,18 @@
     color: $faq-title-color;
     text-align: center;
 }
-
 .faq-section {
     padding: $faq-padding;
     display: flex;
     justify-content: center;
-
     .faq-container {
         width: 100%;
         max-width: $faq-container-max-width;
         background-color: $faq-background-color;
         border-radius: $faq-border-radius;
         padding: $faq-padding-inner;
-
         .faq-item {
             margin-bottom: $faq-margin-bottom-item;
-
             .faq-question {
                 @include faq-item-style(
                     $faq-question-bg-color,
@@ -35,13 +31,11 @@
                 justify-content: space-between;
                 align-items: center;
                 cursor: pointer;
-
                 .arrow {
                     font-size: $arrow-font-size;
                     transition: transform 0.3s ease;
                 }
             }
-
             .faq-answer {
                 @include faq-answer-style(
                     $faq-answer-bg-color,
@@ -52,12 +46,10 @@
                 display: none;
                 margin-top: 5px;
             }
-
             &.open {
                 .faq-answer {
                     display: block;
                 }
-
                 .faq-question .arrow {
                     transform: rotate(180deg);
                 }
